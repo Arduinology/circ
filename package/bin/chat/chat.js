@@ -589,6 +589,8 @@
         conn.windows[opt_chan.toLowerCase()] = win;
         win.setTarget(opt_chan.toLowerCase());
         var _this = this;
+        win.nicks.on('rightclicked', function(nick) {
+        });
         win.nicks.on('dblclicked', function(nick) {
           var newWin = _this.createPrivateMessageWindow(win.conn, nick);
           return _this.switchToWindow(newWin);

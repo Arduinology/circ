@@ -17,7 +17,8 @@
     "storage",
     "fileSystem",
     "system.network",
-    "unlimitedStorage"
+    "unlimitedStorage",
+    "contextMenus"
   ],
 
   "sockets": {

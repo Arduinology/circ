@@ -25,4 +25,8 @@
 
   chat.init();
 
+  chrome.contextMenus.create({
+    "title": "test",
+    "contexts": ["page", "selection", "image", "link"]
+  });
 }).call(this);

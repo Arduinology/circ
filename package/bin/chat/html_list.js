@@ -132,7 +132,8 @@
           break;
         case 2:
           return _this._handleMiddleClick(node);
-        // case 3: // not handling right-clicks
+        case 3: // not handling right-clicks
+          return _this._handleRightClick(node);
         }
       });
       node.html.dblclick(function(event) {
@@ -155,6 +156,9 @@
       this._emitClickEvent(node, 'dblclicked');
     };
 
+    HTMLList.prototype._handleRightClick = function(node){
+      this._emitClickEvent(node, 'rightclicked');
+    }
     HTMLList.prototype._emitClickEvent = function(node, eventName) {
       var emitType;
       if (node == this._footerNode) {
