@@ -335,7 +335,7 @@
   */
 
 
-  exports.VERSION = "0.6.5.3";
+  exports.VERSION = "0.6.5.8";
 
   exports.IRC = IRC;
 
